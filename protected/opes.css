@@ -1,0 +1,200 @@
+body {
+  font-family: 'Crimson Text', serif;
+}
+
+/*/////////////Navbar///////// */
+.navbar-nav {
+    display: block;
+    float:none;
+    margin:0 auto;
+    text-align: center;
+    padding: 0px;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.navbar {
+  background-color: white;
+  border: none;
+}
+
+.nav > li > a {
+  padding: 5px 10px;
+}
+
+.navbar-default .navbar-nav > .active > a{
+  background-color: white;
+  color: #ababab;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: white;
+  color: #ababab;
+}
+
+.navbar-default .navbar-nav > li > a{
+  font-family: 'Crimson Text', serif;
+  color: #222;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  font-family: 'Crimson Text', serif;
+  color: #ababab;
+}
+
+.navbar-brand {
+  margin-top: -30%;
+}
+
+.owlPic {
+  width:55px;
+  height:50px;
+  margin-left: 120%;
+}
+
+/*/////////////Members Hover Stuff///////// */
+
+.member-nav {
+  position: relative;
+  float: left;
+  margin-top: .3%;
+  left: -1.1%;
+  list-style: none;
+}
+
+.member-nav li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 1px;
+  background-color: #FFF;
+}
+
+.member-nav li:hover {
+  cursor:pointer;
+}
+
+.member-nav li.active-member-button {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  background-color: #f2f2f2;
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width: 1000px;
+    height: 500px;
+}
+
+.member-block {
+  float: left;
+  margin-left: -34.6%;
+  margin-top: 2.2%;
+  background-color: #f2f2f2;
+  width: 40%;
+  height: 90%;
+  position: relative;
+  border: 1px solid #ddd;
+}
+
+.member-description {
+  list-style: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: -9%;
+  color: #337ab7;
+}
+
+.member-description-block {
+  float: right;
+  background-color: #f2f2f2;
+  top: 4.3%;
+  left: -.2%;
+  width: 57%;
+  height: 90%;
+  position: relative;
+  border: 1px solid #ddd;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.description {
+  display: none;
+}
+
+.active-description {
+  display: inline !important;
+}
+
+.active-block {
+  display: block !important;
+}
+
+.opes1-block, .opes2-block, .opes3-block, .opes4-block {
+  display: none;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.tooltip-wrap {
+  position: relative;
+  font-family: Arial;
+}
+.tooltip-wrap .tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: #edeeef;
+  padding: .5em;
+  border: 1px solid;
+  border-radius: 25px;
+  width: 300px;
+  height: 180px;
+  margin-left: 20px;
+}
+
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
+}
+
+/*////////////Mission Page////////////*/
+.row {
+  text-align: center;
+}
+
+.definition {
+  font-weight: bold;
+}
+
+.col-sm-4:hover span {
+  content: "Opes: Wealth, Resources, Might";
+}
+
+.tenets {
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  font-size: 16px;
+}
+
+.tenet-headline {
+  font-weight: bold; 
+  width: 20%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.list-group-item {
+  color: grey;
+  margin: auto;
+  width: 60%;
+}

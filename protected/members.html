@@ -1,0 +1,200 @@
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="opes.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+</head>
+
+<body>
+	<br><br><br>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid" style="text-align: center;">
+	    <div class="navbar-header">
+	      <a href="mission.html" class="navbar-brand"><img src="images/owl.jpg" class="owlPic"></a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	    	<li><a href="mission.html">Mission</a></li>
+			<li class="active"><a href="members.html">Members</a></li>
+			<li><a href="network.html">Network</a></li>
+			<li><a href="schedule.html">Meeting Schedule</a></li>
+			<li><a href="news.html">News</a></li>
+			<li><a href="ideas.html">Ideas and Concepts</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	<br><br><br>
+
+	<div id="wrapper">
+		<ul class="member-nav">
+			<li class="member-button active-member-button" id="1">Opes I</li>
+			<li class="member-button" id="2">Opes II</li>
+			<li class="member-button" id="3">Opes III</li>
+			<li class="member-button" id="4">Opes IV</li>
+		</ul>
+		<script>
+			$('.member-button').click(function() {
+				$('.member-button').removeClass('active-member-button');
+				$(this).addClass('active-member-button');
+				var showBlock = '.opes' + $(this).attr('id') + '-block';
+				$('.member-block').children().removeClass('active-block');
+				$(showBlock).addClass('active-block');
+				$('.member-description-block').children().removeClass('active-description');
+				var descriptionId = '#' + $('.active-block').children().children().eq(0).text().toLowerCase();
+				$(descriptionId).parent().addClass('active-description');
+			});
+		</script>
+		<div class="member-block">
+			<div class="opes1-block active-block">
+				<h2>Opes I:</h2>
+				<ul class="member-description">
+					<li class="member-description-button">Kevin</li>
+					<li class="member-description-button">Kalen</li>
+					<li class="member-description-button">Caleb</li>
+					<li class="member-description-button">Alon</li>
+					<li class="member-description-button">Alan</li>
+					<li class="member-description-button">Kurt</li>
+					<li class="member-description-button">Jed</li>
+					<li class="member-description-button">Keenan</li>
+					<li class="member-description-button">Onurcan</li>
+					<li class="member-description-button">Randy</li>
+				<ul>
+			</div>
+			<div class="opes2-block">
+				<h2>Opes II:</h2>
+				<ul class="member-description">
+					<li class="member-description-button">Kevin</li>
+					<li class="member-description-button">Yeon</li>
+					<li class="member-description-button">Kazumasa</li>
+					<li class="member-description-button">Keenan</li>
+				<ul>
+			</div>
+			<script>
+				$('.member-description-button').click(function() {
+					$('.member-description-block').children().removeClass('active-description');
+					var descriptionId = '#' + $(this).text().toLowerCase();
+					$(descriptionId).parent().addClass('active-description');
+				});
+			</script>
+		</div>
+		<div class="member-description-block">
+			<div class="description active-description">
+				<div id="kevin">
+					<h4>Kevin</h4>
+				    <p>Origin: <span style="font-weight: bold;"> Washington State, US</span></p>
+				  	<p>Location: <span style="font-weight: bold;"> London, UK</span></p>
+				    <p>Expertise: <span style="font-weight: bold;"> Business</span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				  <div id="kalen">
+				  	<h4>Kalen</h4>
+				    <p>Origin: <span style="font-weight: bold;"> Washington State, US</span></p>
+				    <p>Location: <span style="font-weight: bold;"> Washington State, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;"> Computer Science</span></p>
+				    <a href="network.html">Link to bio</a>
+				  </div> 
+			</div>
+			<div class="description">
+				<div id="caleb">
+					<h4>Caleb</h4>
+				    <p>Origin: <span style="font-weight: bold;"> Wisconsin, US</span></p>
+				    <p>Location: <span style="font-weight: bold;"> Massachusetts, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;"> Physics</span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				<div id="alon">
+					<h4>Alon</h4>
+				    <p>Origin: <span style="font-weight: bold;"> Israel</span></p>
+				    <p>Location: <span style="font-weight: bold;"> Israel</span></p>
+				    <p>Expertise: <span style="font-weight: bold;"> Computer Science</span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				<div id="alan">
+					<h4>Alan</h4>
+				    <p>Origin: <span style="font-weight: bold;"> Mexico</span></p>
+				    <p>Location: <span style="font-weight: bold;"> Washington State, US</span></p>
+				    <p>Expertise:<span style="font-weight: bold;">  Business/Politics</span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				<div id="kurt">
+					<h4>Kurt</h4>
+				    <p>Origin: <span style="font-weight: bold;"> Washington State, US</span></p>
+				    <p>Location: <span style="font-weight: bold;"> Washington State, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;"> Law</span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				<div id="jed">
+					<h4>Jed</h4>
+				    <p>Origin: <span style="font-weight: bold;"> Washington State, US</span></p>
+				    <p>Location: <span style="font-weight: bold;"> Washington State, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;"> Physics</span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				<div id="keenan">
+					<h4>Keenan</h4>
+				    <p>Origin: <span style="font-weight: bold;"> Washington State, US</span></p>
+				    <p>Location: <span style="font-weight: bold;"> Vietnam</span></p>
+				    <p>Expertise:<span style="font-weight: bold;">  Travel</span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				<div id="onurcan">
+					<h4>Onurcan</h4>
+				    <p>Origin: <span style="font-weight: bold;"> Turkey</span></p>
+				    <p>Location: <span style="font-weight: bold;"> Spain</span></p>
+				    <p>Expertise:<span style="font-weight: bold;">  Genetic Science</span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				<div id="randy">
+					<h4>Randy</h4>
+				    <p>Origin: <span style="font-weight: bold;"> Tennessee, US</span></p>
+				    <p>Location: <span style="font-weight: bold;"> Colorado, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;"> Materials Engineering</span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				<div id="yeon">
+					<h4>Yeon</h4>
+				    <p>Origin: <span style="font-weight: bold;"></span></p>
+				    <p>Location: <span style="font-weight: bold;"></span></p>
+				    <p>Expertise: <span style="font-weight: bold;"></span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				<div id="kazumasa">
+					<h4>Kazumasa</h4>
+				    <p>Origin: <span style="font-weight: bold;"></span></p>
+				    <p>Location: <span style="font-weight: bold;"></span></p>
+				    <p>Expertise: <span style="font-weight: bold;"></span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+			<div class="description">
+				<div id="">
+					<h4></h4>
+				    <p>Origin: <span style="font-weight: bold;"></span></p>
+				    <p>Location: <span style="font-weight: bold;"></span></p>
+				    <p>Expertise: <span style="font-weight: bold;"></span></p>
+				    <a href="network.html">Link to bio</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
