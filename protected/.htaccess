@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "This area is for members only"
-AuthUserFile file:///C:/Users/mccrea_ka/Desktop/opes/protected/.htpasswd
-Require valid-user
