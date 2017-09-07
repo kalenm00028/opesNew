@@ -1,17 +1,6 @@
 <head>
 	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-	<script>
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyDiFSo7Lntffp1h-XPA-w25RIEsrhwHaT0",
-	    authDomain: "opes-e9bf7.firebaseapp.com",
-	    databaseURL: "https://opes-e9bf7.firebaseio.com",
-	    projectId: "opes-e9bf7",
-	    storageBucket: "opes-e9bf7.appspot.com",
-	    messagingSenderId: "93679273024"
-	  };
-	  firebase.initializeApp(config);
-	</script>
+	<script src="app.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -19,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 </head>
 
-<body>
+<body onload="isAuth()">
 	<br><br><br>
 	<nav class="navbar navbar-default">
 	  <div class="container-fluid" style="text-align: center;">
@@ -34,6 +23,9 @@
 			<li><a href="news.html">News</a></li>
 			<li><a href="ideas.html">Ideas and Concepts</a></li>
 	    </ul>
+	  </div>
+	  <div class="signOut">
+	  	<button id="signOutButton" class="btn btn-action">Sign Out</button>
 	  </div>
 	</nav>
 	<br><br><br>

@@ -57,6 +57,12 @@ body {
   margin-left: 120%;
 }
 
+.signOut {
+  float: right;
+  margin-right: 8%;
+  margin-top: -2%;
+}
+
 /*/////////////Members Hover Stuff///////// */
 
 .member-nav {
@@ -196,5 +202,24 @@ body {
 .list-group-item {
   color: grey;
   margin: auto;
+  width: 60%;
+}
+
+/*////////////Network Page////////////*/
+.dataTables_wrapper .dataTables_info {
+  margin-left: 15%;
+}
+.dataTables_wrapper .dataTables_paginate {
+  margin-right: 15%;
+}
+.dataTables_wrapper .dataTables_filter {
+  margin-right: 15%;
+}
+.dataTables_wrapper .dataTables_length {
+  margin-left: 15%;
+}
+
+/*////////////Index Page////////////*/
+.form-control {
   width: 60%;
 }

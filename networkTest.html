@@ -1,22 +1,14 @@
 <head>
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDiFSo7Lntffp1h-XPA-w25RIEsrhwHaT0",
-      authDomain: "opes-e9bf7.firebaseapp.com",
-      databaseURL: "https://opes-e9bf7.firebaseio.com",
-      projectId: "opes-e9bf7",
-      storageBucket: "opes-e9bf7.appspot.com",
-      messagingSenderId: "93679273024"
-    };
-    firebase.initializeApp(config);
-  </script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
   <link rel="stylesheet" type="text/css" href="opes.css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <script src="app.js"></script>
   <style>
     table {
         font-family: arial, sans-serif;
@@ -37,7 +29,7 @@
   </style>
 </head>
 
-<body>
+<body onload="isAuth()">
   <br><br><br>
   <nav class="navbar navbar-default">
     <div class="container-fluid" style="text-align: center;">
@@ -53,6 +45,9 @@
       <li><a href="ideas.html">Ideas and Concepts</a></li>
       </ul>
     </div>
+    <div class="signOut">
+      <button id="signOutButton" class="btn btn-action">Sign Out</button>
+    </div>
   </nav>
   <br><br><br>
 
@@ -63,20 +58,30 @@
         var resources = snapshot.val();
         var keys = Object.keys(resources);
         for (var i=0; i<resources.length; i++) {
-          /*$(".resourceList").append("<li><span style='font-weight:bold;'>Region:  </span>" + resources[i].regions + "<br><span style='font-weight:bold;'>Skillset:  </span>" + resources[i].skillset + "<br><span style='font-weight:bold;'>Key:  </span>" + keys[i] + "<br><br></li>");*/
-          $(".resourceTable").append("<tr><td>" + resources[i].skillset + "</td><td>" + resources[i].regions + "</td><td>" + resources[i].tag + "</td></tr>");
+          $("#resourceTable").append("<tr><td>" + resources[i].skillset + "</td><td>" + resources[i].regions + "</td><td>" + resources[i].tag + "</td></tr>");
         }
+        $("#resourceTable").DataTable();
       }, function(error) {
         console.log("Error: " + error.code);
       });
+      $("#resourceTable").append("</tbody>");      
     </script>
-    <ul class="resourceList">
-    </ul>
-    <table class="resourceTable">
-      <tr style="font-weight: bold;">
-        <td>Skillset</td>
-        <td>Region</td>
-        <td>Key</td>
-      </tr>
+    <table id="resourceTable" class="display" cellspacing="0" width="70%">
+      <thead>
+        <tr style="font-weight: bold;">
+          <td>Skillset</td>
+          <td>Region</td>
+          <td>Key</td>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr style="font-weight: bold;">
+          <td>Skillset</td>
+          <td>Region</td>
+          <td>Key</td>
+        </tr>
+      </tfoot>
+      <tbody>
     </table>
-  <div>
+  </div>
+</body>
