@@ -1,5 +1,5 @@
 var config = {
-	    apiKey: "AIzaSyDiFSo7Lntffp1h-XPA-w25RIEsrhwHaT0",
+	    apiKey: "", //removed
 	    authDomain: "opes-e9bf7.firebaseapp.com",
 	    databaseURL: "https://opes-e9bf7.firebaseio.com",
 	    projectId: "opes-e9bf7",
