@@ -219,6 +219,10 @@ body {
   margin-left: 15%;
 }
 
+table, th, td {
+   border: 1px solid black;
+}
+
 /*////////////Index Page////////////*/
 .form-control {
   width: 60%;
