@@ -1,0 +1,42 @@
+<head>
+	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+	<script src="app.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="opes.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+</head>
+
+<body onload="isAuth()">
+	<br><br><br>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid" style="text-align: center;">
+	    <div class="navbar-header">
+	      <a href="mission.html" class="navbar-brand"><img src="images/owl.jpg" class="owlPic"></a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	    	<li><a href="mission.html">Mission</a></li>
+	    	<li>|</li>
+			<li><a href="members.html">Members</a></li>
+			<li>|</li>
+			<li><a href="network.html">Network</a></li>
+			<li>|</li>
+			<li class="active"><a href="schedule.html">Meeting Schedule</a></li>
+			<li>|</li>
+			<li><a href="news.html">News</a></li>
+			<li>|</li>
+			<li><a href="ideas.html">Ideas and Concepts</a></li>
+	    </ul>
+	  </div>
+	  <div class="signOut">
+	  	<button id="signOutButton" class="btn btn-action">Sign Out</button>
+	  </div>
+	</nav>
+	<br><br><br>
+
+	<div class="container" style="margin-left: 25%;">
+		<iframe src="https://calendar.google.com/calendar/embed?src=ang9ndqctf7fgomajcqkbqfbk4%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	</div>
+
+</body>
