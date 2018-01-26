@@ -64,7 +64,8 @@ body {
   margin-top: -2%;
 }
 
-/*/////////////Members Hover Stuff///////// */
+
+/*/////////////Members Stuff///////// */
 
 .member-nav {
   position: relative;
@@ -76,8 +77,8 @@ body {
 
 .member-nav li {
   display: inline;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 1px;
   background-color: #FFF;
 }
@@ -102,7 +103,8 @@ body {
 
 .member-block {
   float: left;
-  margin-left: -34.6%;
+  /*margin-left: -34.6%;*/
+  margin-left: -41.2%;
   margin-top: 2.2%;
   background-color: #f2f2f2;
   width: 40%;
@@ -117,12 +119,14 @@ body {
   font-size: 16px;
   margin-left: -9%;
   color: #337ab7;
+  width: 10%;
+  line-height: 25px;
 }
 
 .member-description-block {
   float: right;
   background-color: #f2f2f2;
-  top: 4.3%;
+  top: -2.2%;
   left: -.2%;
   width: 57%;
   height: 90%;
@@ -174,6 +178,15 @@ body {
 }
 
 /*////////////Mission Page////////////*/
+.mission-headline {
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: auto;
+  text-align: center;
+  width: 15%;
+}
+
 .row {
   text-align: center;
 }
@@ -203,7 +216,8 @@ body {
 .list-group-item {
   color: grey;
   margin: auto;
-  width: 60%;
+  border: none;
+  padding: 0px;
 }
 
 /*////////////Network Page////////////*/
@@ -218,6 +232,69 @@ body {
 }
 .dataTables_wrapper .dataTables_length {
   margin-left: 15%;
+}
+
+/*////////////Schedule//////////////*/
+.calendar {
+  margin-left: 10%;
+  margin-right: 5%;
+  float: left;
+}
+
+.calendar-overview {
+  margin-left: 5%;
+}
+
+.dropdown {
+  float: right;
+}
+
+.dropdown-menu {
+  margin-top: 35px;
+}
+
+.calendar-container {
+  margin-top: 3.1%;
+}
+
+.opesI-calendar {
+  display: none;
+}
+
+.opesII-calendar {
+  display: none;
+}
+
+.opesIII-calendar {
+  display: none;
+}
+
+.active-calendar-block {
+  display: block;
+}
+
+.opesI-calendar tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.opesII-calendar td {
+  padding: 10px 10px 10px 0px;
+}
+
+.opesII-calendar tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.opesIII-calendar td {
+  padding: 10px 10px 10px 0px;
+}
+
+.opesIII-calendar tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.opesI-calendar td {
+  padding: 10px 10px 10px 0px;
 }
 
 /*////////////Index Page////////////*/

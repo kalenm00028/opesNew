@@ -39,6 +39,12 @@ var isAuth = function() {
 	});
 }
 
+
+var swapCalendar = function(calendar) {
+	$('.calendar-container').children().removeClass('active-calendar-block');
+	$(calendar).addClass('active-calendar-block');
+};
+
 //This is how I removed values. Keeping it here so I don't forget.
 var removeValues = function() {
 	var ref = firebase.database().ref();

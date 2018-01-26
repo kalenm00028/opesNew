@@ -1,46 +1,48 @@
 <head>
 	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-	<script src="app.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="opes.css">
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+	<script src="app.js"></script>
+	<link rel="icon" href="images/owl.ico" type="image/x-icon"/>
 </head>
+
+<title>Opes - Groups</title>
 
 <body onload="isAuth()">
 	<br><br><br>
 	<nav class="navbar navbar-default">
 	  <div class="container-fluid" style="text-align: center;">
 	    <div class="navbar-header">
-	      <a href="mission.html" class="navbar-brand"><img src="images/owl.jpg" class="owlPic"></a>
+	      <a href="mission.html" class="navbar-brand"><img src="images/owl.png" class="owlPic"></a>
 	    </div>
 	    <ul class="nav navbar-nav">
 	    	<li><a href="mission.html">Mission</a></li>
 	    	<li>|</li>
-			<li class="active"><a href="members.html">Members</a></li>
+			<li class="active"><a href="members.html">Groups</a></li>
 			<li>|</li>
 			<li><a href="network.html">Network</a></li>
 			<li>|</li>
 			<li><a href="schedule.html">Meeting Schedule</a></li>
-			<li>|</li>
+			<!--<li>|</li>
 			<li><a href="news.html">News</a></li>
 			<li>|</li>
-			<li><a href="ideas.html">Ideas and Concepts</a></li>
+			<li><a href="ideas.html">Ideas and Concepts</a></li>-->
 	    </ul>
 	  </div>
 	  <div class="signOut">
 	  	<button id="signOutButton" class="btn btn-action">Sign Out</button>
 	  </div>
 	</nav>
-	<br><br><br>
+	<br><br>
 
 	<div id="wrapper">
 		<ul class="member-nav">
-			<li class="member-button active-member-button" id="1">Opes I</li>
-			<li class="member-button" id="2">Opes II</li>
+			<li class="member-button active-member-button" id="1">Opes Consilium Parit</li>
+			<li class="member-button" id="2">Opes Conventus Ad Creandum</li>
 			<li class="member-button" id="3">Opes III</li>
-			<li class="member-button" id="4">Opes IV</li>
 		</ul>
 		<script>
 			$('.member-button').click(function() {
@@ -56,7 +58,7 @@
 		</script>
 		<div class="member-block">
 			<div class="opes1-block active-block">
-				<h2>Opes I:</h2>
+				<h3>Opes Cosilium Parit:</h3>
 				<ul class="member-description">
 					<li class="member-description-button">Kevin</li>
 					<li class="member-description-button">Kalen</li>
@@ -67,16 +69,29 @@
 					<li class="member-description-button">Jed</li>
 					<li class="member-description-button">Keenan</li>
 					<li class="member-description-button">Onurcan</li>
-					<li class="member-description-button">Randy</li>
 				<ul>
 			</div>
 			<div class="opes2-block">
-				<h2>Opes II:</h2>
+				<h3>Opes Conventus Ad Creandum:</h3>
 				<ul class="member-description">
 					<li class="member-description-button">Kevin</li>
-					<li class="member-description-button">Yeon</li>
-					<li class="member-description-button">Kazumasa</li>
-					<li class="member-description-button">Keenan</li>
+					<li class="member-description-button">Alperen</li>
+					<li class="member-description-button">Axel</li>
+					<li class="member-description-button">Ipeknaz</li>
+					<li class="member-description-button">Binyi</li>
+					<li class="member-description-button">Pranav</li>
+				<ul>
+			</div>
+			<div class="opes3-block">
+				<h3>Opes III:</h3>
+				<ul class="member-description">
+					<li class="member-description-button">Kevin</li>
+					<li class="member-description-button">Kristian</li>
+					<li class="member-description-button">Alison</li>
+					<li class="member-description-button">Nikolai</li>
+					<li class="member-description-button">Jovo</li>
+					<li class="member-description-button">Reto</li>
+					<li class="member-description-button">Benjamin</li>
 				<ul>
 			</div>
 			<script>
@@ -94,7 +109,7 @@
 				    <p>Origin: <span style="font-weight: bold;"> Washington State, US</span></p>
 				  	<p>Location: <span style="font-weight: bold;"> London, UK</span></p>
 				    <p>Expertise: <span style="font-weight: bold;"> Business</span></p>
-				    <a href="network.html">Link to bio</a>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
@@ -103,7 +118,7 @@
 				    <p>Origin: <span style="font-weight: bold;"> Washington State, US</span></p>
 				    <p>Location: <span style="font-weight: bold;"> Washington State, US</span></p>
 				    <p>Expertise: <span style="font-weight: bold;"> Computer Science</span></p>
-				    <a href="network.html">Link to bio</a>
+				    <!--<a href="network.html">Link to bio</a>-->
 				  </div> 
 			</div>
 			<div class="description">
@@ -112,7 +127,7 @@
 				    <p>Origin: <span style="font-weight: bold;"> Wisconsin, US</span></p>
 				    <p>Location: <span style="font-weight: bold;"> Massachusetts, US</span></p>
 				    <p>Expertise: <span style="font-weight: bold;"> Physics</span></p>
-				    <a href="network.html">Link to bio</a>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
@@ -121,7 +136,7 @@
 				    <p>Origin: <span style="font-weight: bold;"> Israel</span></p>
 				    <p>Location: <span style="font-weight: bold;"> Israel</span></p>
 				    <p>Expertise: <span style="font-weight: bold;"> Computer Science</span></p>
-				    <a href="network.html">Link to bio</a>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
@@ -130,7 +145,7 @@
 				    <p>Origin: <span style="font-weight: bold;"> Mexico</span></p>
 				    <p>Location: <span style="font-weight: bold;"> Washington State, US</span></p>
 				    <p>Expertise:<span style="font-weight: bold;">  Business/Politics</span></p>
-				    <a href="network.html">Link to bio</a>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
@@ -139,7 +154,7 @@
 				    <p>Origin: <span style="font-weight: bold;"> Washington State, US</span></p>
 				    <p>Location: <span style="font-weight: bold;"> Washington State, US</span></p>
 				    <p>Expertise: <span style="font-weight: bold;"> Law</span></p>
-				    <a href="network.html">Link to bio</a>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
@@ -148,7 +163,7 @@
 				    <p>Origin: <span style="font-weight: bold;"> Washington State, US</span></p>
 				    <p>Location: <span style="font-weight: bold;"> Washington State, US</span></p>
 				    <p>Expertise: <span style="font-weight: bold;"> Physics</span></p>
-				    <a href="network.html">Link to bio</a>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
@@ -157,7 +172,7 @@
 				    <p>Origin: <span style="font-weight: bold;"> Washington State, US</span></p>
 				    <p>Location: <span style="font-weight: bold;"> Vietnam</span></p>
 				    <p>Expertise:<span style="font-weight: bold;">  Travel</span></p>
-				    <a href="network.html">Link to bio</a>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
@@ -166,34 +181,106 @@
 				    <p>Origin: <span style="font-weight: bold;"> Turkey</span></p>
 				    <p>Location: <span style="font-weight: bold;"> Spain</span></p>
 				    <p>Expertise:<span style="font-weight: bold;">  Genetic Science</span></p>
-				    <a href="network.html">Link to bio</a>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
-				<div id="randy">
-					<h4>Randy</h4>
-				    <p>Origin: <span style="font-weight: bold;"> Tennessee, US</span></p>
-				    <p>Location: <span style="font-weight: bold;"> Colorado, US</span></p>
-				    <p>Expertise: <span style="font-weight: bold;"> Materials Engineering</span></p>
-				    <a href="network.html">Link to bio</a>
+				<div id="alperen">
+					<h4>Alperen</h4>
+				    <p>Origin: <span style="font-weight: bold;">Turkey</span></p>
+				    <p>Location: <span style="font-weight: bold;">Pennsylvania, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Investments</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
-				<div id="yeon">
-					<h4>Yeon</h4>
-				    <p>Origin: <span style="font-weight: bold;"></span></p>
-				    <p>Location: <span style="font-weight: bold;"></span></p>
-				    <p>Expertise: <span style="font-weight: bold;"></span></p>
-				    <a href="network.html">Link to bio</a>
+				<div id="axel">
+					<h4>Axel</h4>
+				    <p>Origin: <span style="font-weight: bold;">Burundi</span></p>
+				    <p>Location: <span style="font-weight: bold;">Washington State, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Computer Science</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
-				<div id="kazumasa">
-					<h4>Kazumasa</h4>
-				    <p>Origin: <span style="font-weight: bold;"></span></p>
-				    <p>Location: <span style="font-weight: bold;"></span></p>
-				    <p>Expertise: <span style="font-weight: bold;"></span></p>
-				    <a href="network.html">Link to bio</a>
+				<div id="ipeknaz">
+					<h4>Ipeknaz</h4>
+				    <p>Origin: <span style="font-weight: bold;">Turkey</span></p>
+				    <p>Location: <span style="font-weight: bold;">Pennsylvania, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Child Psychology</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
+				</div>
+			</div>
+			<div class="description">
+				<div id="binyi">
+					<h4>Binyi</h4>
+				    <p>Origin: <span style="font-weight: bold;">China</span></p>
+				    <p>Location: <span style="font-weight: bold;">Massachusetts, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Physics</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
+				</div>
+			</div>
+			<div class="description">
+				<div id="pranav">
+					<h4>Pranav</h4>
+				    <p>Origin: <span style="font-weight: bold;">California, US</span></p>
+				    <p>Location: <span style="font-weight: bold;">Washington State, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Computer Science and Biology</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
+				</div>
+			</div>
+			<div class="description">
+				<div id="kristian">
+					<h4>Kristian</h4>
+				    <p>Origin: <span style="font-weight: bold;">Norway</span></p>
+				    <p>Location: <span style="font-weight: bold;">Norway</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Finance</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
+				</div>
+			</div>
+			<div class="description">
+				<div id="alison">
+					<h4>Alsion</h4>
+				    <p>Origin: <span style="font-weight: bold;">Hawaii, US</span></p>
+				    <p>Location: <span style="font-weight: bold;">California, US</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Green Energy</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
+				</div>
+			</div>
+			<div class="description">
+				<div id="nikolai">
+					<h4>Nikolai</h4>
+				    <p>Origin: <span style="font-weight: bold;">Norway</span></p>
+				    <p>Location: <span style="font-weight: bold;">Norway</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Technology Investments</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
+				</div>
+			</div>
+			<div class="description">
+				<div id="jovo">
+					<h4>Jovo</h4>
+				    <p>Origin: <span style="font-weight: bold;">Switzerland</span></p>
+				    <p>Location: <span style="font-weight: bold;">Switzerland</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Corporate Accounting</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
+				</div>
+			</div>
+			<div class="description">
+				<div id="reto">
+					<h4>Reto</h4>
+				    <p>Origin: <span style="font-weight: bold;">Switzerland</span></p>
+				    <p>Location: <span style="font-weight: bold;">Switzerland</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Finance</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
+				</div>
+			</div>
+			<div class="description">
+				<div id="benjamin">
+					<h4>Benjamin</h4>
+				    <p>Origin: <span style="font-weight: bold;">Germany</span></p>
+				    <p>Location: <span style="font-weight: bold;">London, UK</span></p>
+				    <p>Expertise: <span style="font-weight: bold;">Business and Law</span></p>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 			<div class="description">
@@ -202,7 +289,7 @@
 				    <p>Origin: <span style="font-weight: bold;"></span></p>
 				    <p>Location: <span style="font-weight: bold;"></span></p>
 				    <p>Expertise: <span style="font-weight: bold;"></span></p>
-				    <a href="network.html">Link to bio</a>
+				    <!--<a href="network.html">Link to bio</a>-->
 				</div>
 			</div>
 		</div>
