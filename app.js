@@ -12,7 +12,7 @@ firebase.initializeApp(config);
 var indexLoad = function() {
 	firebase.auth().onAuthStateChanged(function(user) {
 		if (user) {
-			window.location = "file:///C:/Users/mccrea_ka/Desktop/opes/mission.html"
+			window.location = "mission.html"
 		}
 	});
 }
@@ -30,7 +30,7 @@ var isAuth = function() {
 		if (user) {
 			return true;
 		} else {
-			window.location = "file:///C:/Users/mccrea_ka/Desktop/opes/index.html";
+			window.location = "index.html";
 		}
 	});
 	const btnSignOut = document.getElementById("signOutButton");

@@ -221,6 +221,17 @@ body {
 }
 
 /*////////////Network Page////////////*/
+#networkDropdown {
+  float: right;
+  margin-right: 20.5%;
+}
+
+#networkDropdownMenu {
+  float: right;
+  margin-top: 35px;
+  padding-left: 5px;
+}
+
 .dataTables_wrapper .dataTables_info {
   margin-left: 15%;
 }
@@ -245,11 +256,12 @@ body {
   margin-left: 5%;
 }
 
-.dropdown {
+#scheduleDropdown {
   float: right;
+  margin-right: 10%;
 }
 
-.dropdown-menu {
+#scheduleDropdownMenu {
   margin-top: 35px;
 }
 
